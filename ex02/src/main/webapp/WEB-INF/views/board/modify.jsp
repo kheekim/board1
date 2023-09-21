@@ -117,6 +117,8 @@
 				}
 			}
 			else if(operation==="remove") //삭제 버튼이 눌리면
+				//1. remove.jsp로 보내기
+				
 				
 				formObj.attr("action","/board/remove");
 			else if(operation==="list"){ //리스트 버튼이 눌리면

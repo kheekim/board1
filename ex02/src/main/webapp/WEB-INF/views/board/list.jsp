@@ -18,7 +18,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             할일 리스트<a href="register">게시글 쓰기</a>
-                            ${rank.count}
+                            현재 시간 ${time}
                         </div>
                         <!-- /.panel-heading -->
                         

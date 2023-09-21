@@ -114,7 +114,10 @@
 			group by updatedate order by updatedate
 
 		</select>
-
+		
+		<select id="time" resultType="org.zerock.domain.BoardVO">
+		select to_char(sysdate, 'YYYY-MM-DD HH24:MI:SS') from dual
+		</select>
 
 </mapper>
 	

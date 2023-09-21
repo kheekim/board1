@@ -24,6 +24,9 @@ public interface BoardService {
 	
 	//좋아요 올리기
 	void good(Long bno);
+	
+	void time();
+	
 		
 
 }

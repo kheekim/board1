@@ -1,5 +1,7 @@
 package org.zerock.controller;
 
+import java.time.LocalDate;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -113,6 +115,17 @@ public class BoardController {
 				
 	}
 	
+	@PostMapping
+	public String time(Model model, Criteria cri) {
+		log.info("시간 요청");
+		
+		
+		
+		model.addAttribute("time", );	
+		
+		
+		return "redirect:/board/list";	
+	}
 
 	
 	

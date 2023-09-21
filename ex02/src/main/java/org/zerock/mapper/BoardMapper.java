@@ -48,7 +48,7 @@ public interface BoardMapper {
 	//좋아요
 	void good(Long bno);
 	
-	
+	void time();
 	//게시글 페이지 처리
 	
 	//게시글 검색

@@ -66,6 +66,14 @@ public class BoardServiceT implements BoardService {
 		mapper.good(bno);
 		
 	}
+	
+	@Override
+	public void time() {
+		mapper.time();
+		
+	}
+	
+	
 
 
 }

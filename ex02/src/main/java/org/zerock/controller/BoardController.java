@@ -82,10 +82,12 @@ public class BoardController {
 	}
 	
 	@GetMapping("/remove")
-	public void remove(Long bno,Model model,Criteria cri) {
+	public String remove(Long bno,Model model,Criteria cri) {
 		log.info("삭제화면 요청");
 		model.addAttribute("board",service.get(bno));
 		model.addAttribute("cri", cri);
+		
+		return "redirect:/board/remove";
 	}
 	
 	//수정(수정글-BoardV) board/modify (post) <- 입력화면(get)
@@ -108,11 +110,7 @@ public class BoardController {
 		model.addAttribute("cri", cri);
 	}
 	
-	@GetMapping("/remove")
-	public String remove() {
-		log.info("삭제 화면 요청");
-		return "redirect:/board/remove";
-	}
+
 	
 	// 좋아요 처리
 	@GetMapping("/good")

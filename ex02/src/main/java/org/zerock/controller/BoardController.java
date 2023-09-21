@@ -108,6 +108,11 @@ public class BoardController {
 		model.addAttribute("cri", cri);
 	}
 	
+	@GetMapping("/remove")
+	public String remove() {
+		log.info("삭제 화면 요청");
+		return "redirect:/board/remove";
+	}
 	
 	// 좋아요 처리
 	@GetMapping("/good")
@@ -117,14 +122,14 @@ public class BoardController {
 				
 	}
 	
-	@PostMapping
-	public String time(BoardVO vo, Model model, Criteria cri) {
-		log.info("시간 요청");
-		
-		
-		
-		return "redirect:/board/list";	
-	}
+//	@PostMapping
+//	public String time(BoardVO vo, Model model, Criteria cri) {
+//		log.info("시간 요청");
+//		
+//		
+//		
+//		return "redirect:/board/list";	
+//	}
 
 	
 	

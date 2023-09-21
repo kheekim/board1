@@ -87,7 +87,8 @@ public class BoardController {
 		model.addAttribute("board",service.get(bno));
 		model.addAttribute("cri", cri);
 		
-		return "redirect:/board/remove";
+		return "redirect:/board/list?pageNum="+cri.getPageNum()+
+				"&amount="+cri.getAmount();	
 	}
 	
 	//수정(수정글-BoardV) board/modify (post) <- 입력화면(get)

@@ -117,6 +117,7 @@
 				}
 			}
 			else if(operation==="remove") //삭제 버튼이 눌리면
+				
 				formObj.attr("action","/board/remove");
 			else if(operation==="list"){ //리스트 버튼이 눌리면
 				self.location="/board/list";  //board/list 요청

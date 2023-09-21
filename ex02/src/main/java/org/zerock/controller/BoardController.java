@@ -1,5 +1,6 @@
 package org.zerock.controller;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 import org.springframework.stereotype.Controller;
@@ -30,6 +31,7 @@ public class BoardController {
 		log.info("list url 요청...");
 		model.addAttribute("list", service.getList(cri)); //글목록
 		model.addAttribute("pageMaker", new PageDTO(cri, 123));//페이지바 정보
+//		model.addAttribute("now", now);
 		
 		
 		// board/list.jsp
@@ -116,12 +118,9 @@ public class BoardController {
 	}
 	
 	@PostMapping
-	public String time(Model model, Criteria cri) {
+	public String time(BoardVO vo, Model model, Criteria cri) {
 		log.info("시간 요청");
 		
-		
-		
-		model.addAttribute("time", );	
 		
 		
 		return "redirect:/board/list";	
